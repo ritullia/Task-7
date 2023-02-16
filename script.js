@@ -5,8 +5,21 @@ Parašykite funkciją showObjectKeys, kuri kaip argumentą priims objektą
 ir grąžins visus jo "key" masyve.
 -------------------------------------------------------------------------- */
 const audi = {
-	make: "audi",
+	marke: "audi",
 	model: "A6",
 	year: 2005,
 	color: "white",
 };
+
+
+function showObjectKeys(audi) {
+	// console.log(audi);
+	const keys = Object.keys(audi)
+	console.log(keys)
+	keys.forEach((key) => {
+		console.log(`${key}: ${audi[key]}`);
+	});
+
+}
+
+showObjectKeys(audi)
