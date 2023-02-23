@@ -16,9 +16,10 @@ function showObjectKeys(audi) {
 	// console.log(audi);
 	const keys = Object.keys(audi)
 	console.log(keys)
+	return keys
 	keys.forEach((key) => {
 		console.log(`${key}: ${audi[key]}`);
-		return (`${key}: ${audi[key]}`);
+		return key: audi[key]
 	});
 
 }
