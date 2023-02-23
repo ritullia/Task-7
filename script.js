@@ -18,6 +18,7 @@ function showObjectKeys(audi) {
 	console.log(keys)
 	keys.forEach((key) => {
 		console.log(`${key}: ${audi[key]}`);
+		return (`${key}: ${audi[key]}`);
 	});
 
 }
